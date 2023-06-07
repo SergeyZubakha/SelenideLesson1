@@ -37,5 +37,19 @@ public class SoftAssertionsTest {
                 "    $(\"#second\").should(visible).click();\n" +
                 "  }\n" +
                 "}"));
+        //$(".markdown-body").$("div", 4).shouldHave(text("@ExtendWith({SoftAssertsExtension.class})\n" +
+//                "class Tests {\n" +
+//                "  @Test\n" +
+//                "  void test() {\n" +
+//                "    Configuration.assertionMode = SOFT;\n" +
+//                "    open(\"page.html\");\n" +
+//                "\n" +
+//                "    $(\"#first\").should(visible).click();\n" +
+//                "    $(\"#second\").should(visible).click();\n" +
+//                "  }\n" +
+//                "}"));
+//         тут вопрос, почему по индексу 4 тест сверяет текст не с тем дивом, что я предплаоагаю? (с индексом 8 тест работает)
+//         ведь такая запись $("h1").$("div") должна искать дочерний элемент первого уровня вложенности
+//         а не дивы внутри дивов
     }
 }
